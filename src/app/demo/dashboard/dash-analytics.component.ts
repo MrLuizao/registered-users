@@ -23,6 +23,7 @@ import {
   ApexMarkers
 } from 'ng-apexcharts';
 import { FirebaseService } from 'src/app/services/firebase.service';
+import { CommonService } from 'src/app/services/common.service';
 
 export type ChartOptions = {
   series: ApexAxisChartSeries | ApexNonAxisChartSeries;
@@ -60,7 +61,7 @@ export default class DashAnalyticsComponent {
   chartOptions_3!: Partial<ChartOptions>;
 
   // constructor
-  constructor(private firebaseService: FirebaseService) {
+  constructor(private firebaseService: FirebaseService, private commonService: CommonService) {
 
     this.firebaseService.getRegisteredUsers().subscribe({
       next: (next)=> {
@@ -71,6 +72,8 @@ export default class DashAnalyticsComponent {
           ...item,
           createdAt: this.convertTimestampToDate(item.createdAt)
         }));
+
+        // this.createDataReport(this.dataSource)
         
       },
       error: (error)=> {
@@ -78,7 +81,6 @@ export default class DashAnalyticsComponent {
 
       }
     });
-
 
     this.chartOptions = {
       chart: {
@@ -264,6 +266,10 @@ export default class DashAnalyticsComponent {
         }
       }
     };
+  }
+
+  createDataReport(dataParam: any) {
+    this.commonService.exportToExcel(dataParam, `usuarios registrados ${new Date()}` );
   }
 
   // Convierte el timestamp a fecha legible

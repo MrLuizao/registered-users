@@ -98,18 +98,6 @@
     "@angular-devkit/architect" "0.1800.6"
     rxjs "7.8.1"
 
-"@angular-devkit/core@>= 18.0.0 < 19.0.0", "@angular-devkit/core@18.2.12":
-  version "18.2.12"
-  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular-devkit/core/-/core-18.2.12.tgz"
-  integrity sha1-+1FOmzyeqH3aoVgtOUfxsJTJs4c=
-  dependencies:
-    ajv "8.17.1"
-    ajv-formats "3.0.1"
-    jsonc-parser "3.3.1"
-    picomatch "4.0.2"
-    rxjs "7.8.1"
-    source-map "0.7.4"
-
 "@angular-devkit/core@18.0.6":
   version "18.0.6"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular-devkit/core/-/core-18.0.6.tgz"
@@ -122,7 +110,19 @@
     rxjs "7.8.1"
     source-map "0.7.4"
 
-"@angular-devkit/schematics@^18.0.0", "@angular-devkit/schematics@>= 18.0.0 < 19.0.0":
+"@angular-devkit/core@18.2.12":
+  version "18.2.12"
+  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular-devkit/core/-/core-18.2.12.tgz"
+  integrity sha1-+1FOmzyeqH3aoVgtOUfxsJTJs4c=
+  dependencies:
+    ajv "8.17.1"
+    ajv-formats "3.0.1"
+    jsonc-parser "3.3.1"
+    picomatch "4.0.2"
+    rxjs "7.8.1"
+    source-map "0.7.4"
+
+"@angular-devkit/schematics@^18.0.0":
   version "18.2.12"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular-devkit/schematics/-/schematics-18.2.12.tgz"
   integrity sha1-FdGoYRv58YIVQ1YEZyQRsZKb9NE=
@@ -203,7 +203,7 @@
   dependencies:
     "@angular-eslint/bundled-angular-compiler" "18.0.1"
 
-"@angular/animations@^18.0.5", "@angular/animations@18.0.5":
+"@angular/animations@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/animations/-/animations-18.0.5.tgz"
   integrity sha512-RYwlS+4I33beAWdzFFmaDPqXZN+r66qPzzMOk9LQguwF76eBJbykHniODalSLvjrY6Iz7CULavByYNpzq2TT7A== sha1-Jb3H4zp4jBtsOjKg7pFueREmZyU=
@@ -241,7 +241,7 @@
     vite "5.2.11"
     watchpack "2.4.1"
 
-"@angular/cdk@^18.0.5", "@angular/cdk@>=17.0.0":
+"@angular/cdk@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/cdk/-/cdk-18.0.5.tgz"
   integrity sha512-Yf94Udxip8xjVIJlxwh80h6fUpX5JFcBv3FCFer7DU/YzWdoTL+BTIYF8og+NjlDRt1nSbTxdyU2LVI0rTVkpg== sha1-g9rWKWBSic9X+9tq3cvChzOjR/s=
@@ -273,14 +273,14 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-"@angular/common@^18.0.0", "@angular/common@^18.0.0 || ^19.0.0", "@angular/common@^18.0.1", "@angular/common@^18.0.5", "@angular/common@>=17.0.0", "@angular/common@>=9.0.0", "@angular/common@18.0.5":
+"@angular/common@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/common/-/common-18.0.5.tgz"
   integrity sha512-yItVQSu+Rx8gthWJDTOHwbzItY8/lqmmmYA1RMex0u3GkJoX3/3TZSGXbbBXl8GH8vmQOfp9yj3C02JmlwldRg== sha1-JBbBGfbv4/XmJBrdi6XFIrgbB0E=
   dependencies:
     tslib "^2.3.0"
 
-"@angular/compiler-cli@^18.0.0", "@angular/compiler-cli@^18.0.5", "@angular/compiler-cli@18.0.5":
+"@angular/compiler-cli@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/compiler-cli/-/compiler-cli-18.0.5.tgz"
   integrity sha512-aFKDDTsRmc691EkNRj9OkrKNXDOaHdXB42MyUrj3WwJIJFMnSY/UDf6h+CRVF0U+CITszFyWhmeHQRA/3mJWNg== sha1-sv9LkEnpyfJKxsuRBjXvZATfI2g=
@@ -294,14 +294,14 @@
     tslib "^2.3.0"
     yargs "^17.2.1"
 
-"@angular/compiler@^18.0.5", "@angular/compiler@18.0.5":
+"@angular/compiler@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/compiler/-/compiler-18.0.5.tgz"
   integrity sha512-U1/qjNDjxMukXwQrJZjmr87KVxQmHbD7fxVlg0+qafHLe+YDuCtyOfQSGEZrWhwktxvAYZbl3FK+m3Hnk/D3Nw== sha1-B0FAEqHsQfcwe6KL4wNvWov4K40=
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^18.0.0", "@angular/core@^18.0.0 || ^19.0.0", "@angular/core@^18.0.1", "@angular/core@^18.0.5", "@angular/core@>=17.0.0", "@angular/core@>=9.0.0", "@angular/core@18.0.5":
+"@angular/core@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/core/-/core-18.0.5.tgz"
   integrity sha512-0UuL+aMMWGYksz09YBsiHq1li7GmL8obB3IC3T5MwDqnn7FGRUBfBUOZEkM6B+pwgg+RAtNdJkbCfbh1z74bFQ== sha1-FnAw2uGYW+iSW4UdIvcgu0wo980=
@@ -330,14 +330,14 @@
     tslib "^2.3.0"
     winston "^3.0.0"
 
-"@angular/forms@^18.0.0", "@angular/forms@^18.0.5", "@angular/forms@>=9.0.0":
+"@angular/forms@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/forms/-/forms-18.0.5.tgz"
   integrity sha512-nO7bN+nO2/czgKSvPx6ewqpfb8xXOyns06uovWpAXSH4jYoiZ6CHTHhOKrOL/3SRkhUV9u+EUXTTAOSBkS+OBA== sha1-b7umzOjtkF3QSKCgeROCjlvj1ZA=
   dependencies:
     tslib "^2.3.0"
 
-"@angular/localize@^18.0.0", "@angular/localize@^18.0.5":
+"@angular/localize@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/localize/-/localize-18.0.5.tgz"
   integrity sha512-QlMu5sXodqyvCuA158JXsrYkyjN8AtnrZhDZDImQvkFclA5Bkc7+7lcCWoRc9g8bzAFbLuwJAzYGqpPTWPnpxQ== sha1-1n6TQqxqW8GS+WIL4xKNaIjcRzQ=
@@ -347,14 +347,14 @@
     fast-glob "3.3.2"
     yargs "^17.2.1"
 
-"@angular/platform-browser-dynamic@^18.0.0", "@angular/platform-browser-dynamic@^18.0.5":
+"@angular/platform-browser-dynamic@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/platform-browser-dynamic/-/platform-browser-dynamic-18.0.5.tgz"
   integrity sha512-i8CXojKcjsKzD2JR2clIisqavlHCW1jw+F2hJVrf/JR9iu6kVpGpZOqb3yYHoQCsPa7hUzQnn0ewYwBvlWsDmw== sha1-+PxRLnu/+Zz7grC5AgUbzBTYKOc=
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-browser@^18.0.0", "@angular/platform-browser@^18.0.5", "@angular/platform-browser@18.0.5":
+"@angular/platform-browser@^18.0.5":
   version "18.0.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@angular/platform-browser/-/platform-browser-18.0.5.tgz"
   integrity sha512-hBKaGz7dhsjNhD0aWB8G2/YZQ/MaBhzFIQSAZMPs2ccAqH1Jx772/Y11k57seA3VaPpnL8WZ1apOSJgALUJ//w== sha1-OFPS7jccGHYhdpYfwqhA/xlaDY4=
@@ -381,7 +381,7 @@
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@babel/compat-data/-/compat-data-7.24.7.tgz"
   integrity sha512-qJzAIcv03PyaWqxRgO4mSU3lihncDT296vnyuE2O8uA4w3UHWI4S3hgeZd1L8W1Bft40w9JxJ2b412iDUFFRhw== sha1-0ju+pQjDiDuoJR+0FkmCw26ld+0=
 
-"@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.0.0-0 || ^8.0.0-0 <8.0.0", "@babel/core@^7.12.0", "@babel/core@^7.12.3", "@babel/core@^7.13.0", "@babel/core@^7.23.9", "@babel/core@^7.4.0 || ^8.0.0-0 <8.0.0", "@babel/core@7.24.5":
+"@babel/core@^7.12.3", "@babel/core@^7.23.9", "@babel/core@7.24.5":
   version "7.24.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@babel/core/-/core-7.24.5.tgz"
   integrity sha512-tVQRucExLQ02Boi4vdPp49svNGcfL2GhdTCT9aldhXgCJVAI21EtRfBettiuLUwce/7r6bFdgs6JFkcdTiFttA== sha1-FatbmOEBly0XGu75KscNjWcY8Go=
@@ -1587,7 +1587,7 @@
     "@firebase/util" "1.10.0"
     tslib "^2.1.0"
 
-"@firebase/app-compat@0.2.46", "@firebase/app-compat@0.x":
+"@firebase/app-compat@0.2.46":
   version "0.2.46"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@firebase/app-compat/-/app-compat-0.2.46.tgz"
   integrity sha1-ZyOEFsnkXp6GSd/nAwQCavHLCwg=
@@ -1603,7 +1603,7 @@
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@firebase/app-types/-/app-types-0.9.2.tgz"
   integrity sha1-jLzOunhHU6fABmpICbwi+Tre4IA=
 
-"@firebase/app-types@0.9.3", "@firebase/app-types@0.x":
+"@firebase/app-types@0.9.3":
   version "0.9.3"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@firebase/app-types/-/app-types-0.9.3.tgz"
   integrity sha1-hAghnq6bH7dPhsJOcVChSEYEFK0=
@@ -1619,7 +1619,7 @@
     idb "7.1.1"
     tslib "^2.1.0"
 
-"@firebase/app@0.10.16", "@firebase/app@0.x":
+"@firebase/app@0.10.16":
   version "0.10.16"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@firebase/app/-/app-0.10.16.tgz"
   integrity sha1-xVfuj6AIWQm0jW4KAOdAOUO9g28=
@@ -2204,7 +2204,7 @@
   dependencies:
     tslib "^2.1.0"
 
-"@firebase/util@1.10.2", "@firebase/util@1.x":
+"@firebase/util@1.10.2":
   version "1.10.2"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@firebase/util/-/util-1.10.2.tgz"
   integrity sha1-TbtWXPvfUbT7IIHFCT26MDfUmjU=
@@ -2784,7 +2784,7 @@
     "@types/range-parser" "*"
     "@types/send" "*"
 
-"@types/express@*", "@types/express@^4.17.13", "@types/express@^4.17.21":
+"@types/express@*", "@types/express@^4.17.21":
   version "4.17.21"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@types/express/-/express-4.17.21.tgz"
   integrity sha512-ejlPM315qwLpaQlQDTjPdsUFSc6ZsP4AN6AlWnogPjQ7CVi7PYF3YVz+CY3jE2pwYf7E/7HlDAN0rV2GxTG0HQ== sha1-wm1KFR5g7+AISyPcM2nrxjHtGS0=
@@ -2833,7 +2833,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^18.0.0 || >=20.0.0", "@types/node@^20.14.9", "@types/node@>=10.0.0", "@types/node@>=12.12.47", "@types/node@>=13.7.0":
+"@types/node@*", "@types/node@^20.14.9", "@types/node@>=10.0.0", "@types/node@>=12.12.47", "@types/node@>=13.7.0":
   version "20.14.9"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@types/node/-/node-20.14.9.tgz"
   integrity sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg== sha1-EujnZasn+MQhoYIMmfXzE6kztCA=
@@ -2913,7 +2913,7 @@
     natural-compare "^1.4.0"
     ts-api-utils "^1.3.0"
 
-"@typescript-eslint/parser@^7.0.0", "@typescript-eslint/parser@7.14.1":
+"@typescript-eslint/parser@7.14.1":
   version "7.14.1"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@typescript-eslint/parser/-/parser-7.14.1.tgz"
   integrity sha512-8lKUOebNLcR0D7RvlcloOacTOWzOqemWEWkKSVpMZVF/XVcwjPR+3MD08QzbW9TCGJ+DwIc6zUSGZ9vd8cO1IA== sha1-E9l/NXrtPFcZ8lmmzD0aHwZdNpI=
@@ -2932,14 +2932,6 @@
     "@typescript-eslint/types" "7.14.1"
     "@typescript-eslint/visitor-keys" "7.14.1"
 
-"@typescript-eslint/scope-manager@8.16.0":
-  version "8.16.0"
-  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@typescript-eslint/scope-manager/-/scope-manager-8.16.0.tgz"
-  integrity sha1-68mjs5mmmmBS89iBdEVt05nvWQU=
-  dependencies:
-    "@typescript-eslint/types" "8.16.0"
-    "@typescript-eslint/visitor-keys" "8.16.0"
-
 "@typescript-eslint/type-utils@7.14.1":
   version "7.14.1"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@typescript-eslint/type-utils/-/type-utils-7.14.1.tgz"
@@ -2955,11 +2947,6 @@
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@typescript-eslint/types/-/types-7.14.1.tgz"
   integrity sha512-mL7zNEOQybo5R3AavY+Am7KLv8BorIv7HCYS5rKoNZKQD9tsfGUpO4KdAn3sSUvTiS4PQkr2+K0KJbxj8H9NDg== sha1-pDpUDb5d9/KhEmloPXd/xQtDUKo=
 
-"@typescript-eslint/types@8.16.0":
-  version "8.16.0"
-  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@typescript-eslint/types/-/types-8.16.0.tgz"
-  integrity sha1-Sckq4bV5QkWKuD2ex8yrMAXmRzc=
-
 "@typescript-eslint/typescript-estree@7.14.1":
   version "7.14.1"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@typescript-eslint/typescript-estree/-/typescript-estree-7.14.1.tgz"
@@ -2973,30 +2960,6 @@
     minimatch "^9.0.4"
     semver "^7.6.0"
     ts-api-utils "^1.3.0"
-
-"@typescript-eslint/typescript-estree@8.16.0":
-  version "8.16.0"
-  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@typescript-eslint/typescript-estree/-/typescript-estree-8.16.0.tgz"
-  integrity sha1-nXQeVuWxNGm1GQ52NDLOVVGpMAw=
-  dependencies:
-    "@typescript-eslint/types" "8.16.0"
-    "@typescript-eslint/visitor-keys" "8.16.0"
-    debug "^4.3.4"
-    fast-glob "^3.3.2"
-    is-glob "^4.0.3"
-    minimatch "^9.0.4"
-    semver "^7.6.0"
-    ts-api-utils "^1.3.0"
-
-"@typescript-eslint/utils@^7.11.0 || ^8.0.0-alpha.20":
-  version "8.16.0"
-  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@typescript-eslint/utils/-/utils-8.16.0.tgz"
-  integrity sha1-xxJkxDcVf+qpeEKAmDYlSm/IM8M=
-  dependencies:
-    "@eslint-community/eslint-utils" "^4.4.0"
-    "@typescript-eslint/scope-manager" "8.16.0"
-    "@typescript-eslint/types" "8.16.0"
-    "@typescript-eslint/typescript-estree" "8.16.0"
 
 "@typescript-eslint/utils@7.14.1":
   version "7.14.1"
@@ -3015,14 +2978,6 @@
   dependencies:
     "@typescript-eslint/types" "7.14.1"
     eslint-visitor-keys "^3.4.3"
-
-"@typescript-eslint/visitor-keys@8.16.0":
-  version "8.16.0"
-  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/@typescript-eslint/visitor-keys/-/visitor-keys-8.16.0.tgz"
-  integrity sha1-1Qhq/AYLAf96Tsq41J0T1aewdwU=
-  dependencies:
-    "@typescript-eslint/types" "8.16.0"
-    eslint-visitor-keys "^4.2.0"
 
 "@vitejs/plugin-basic-ssl@1.1.0":
   version "1.1.0"
@@ -3208,7 +3163,7 @@ acorn-jsx@^5.3.2:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/acorn-jsx/-/acorn-jsx-5.3.2.tgz"
   integrity sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ== sha1-ftW7VZCLOy8bxVxq8WU7rafweTc=
 
-"acorn@^6.0.0 || ^7.0.0 || ^8.0.0", acorn@^8, acorn@^8.12.0, acorn@^8.7.1, acorn@^8.8.2:
+acorn@^8.12.0, acorn@^8.7.1, acorn@^8.8.2:
   version "8.12.0"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/acorn/-/acorn-8.12.0.tgz"
   integrity sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw== sha1-Fie/ouBYFIA2EzuNm1GnAGY8KUw=
@@ -3220,6 +3175,11 @@ adjust-sourcemap-loader@^4.0.0:
   dependencies:
     loader-utils "^2.0.0"
     regex-parser "^2.2.11"
+
+adler-32@~1.3.0:
+  version "1.3.1"
+  resolved "https://registry.npmjs.org/adler-32/-/adler-32-1.3.1.tgz"
+  integrity sha512-ynZ4w/nUUv5rrsR8UUGoe1VC9hZj6V5hU9Qw1HlMDJGEJw5S7TfTErWTjMys6M7vr0YWcPqs3qAr4ss0nDfP+A==
 
 agent-base@^7.0.2, agent-base@^7.1.0, agent-base@^7.1.1:
   version "7.1.1"
@@ -3272,7 +3232,7 @@ ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^6.12.5, ajv@^6.9.1:
+ajv@^6.12.5:
   version "6.12.6"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/ajv/-/ajv-6.12.6.tgz"
   integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g== sha1-uvWmLoArB9l3A0WG+MO69a3ybfQ=
@@ -3282,7 +3242,7 @@ ajv@^6.12.5, ajv@^6.9.1:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^8.0.0, ajv@^8.8.2, ajv@^8.9.0, ajv@8.17.1:
+ajv@^8.0.0, ajv@^8.9.0, ajv@8.17.1:
   version "8.17.1"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/ajv/-/ajv-8.17.1.tgz"
   integrity sha1-N9mlx3ava8ktf0+VEOukwKYNEaY=
@@ -3368,7 +3328,7 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-apexcharts@^3.49.1, apexcharts@^3.49.2:
+apexcharts@^3.49.2:
   version "3.49.2"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/apexcharts/-/apexcharts-3.49.2.tgz"
   integrity sha512-vBB8KgwfD9rSObA7s4kY2rU6DeaN67gTR3JN7r32ztgKVf8lKkdFQ6iUhk6oIHrV7W8PoHhr5EwKymn0z5Fz6A== sha1-SOvPfnrXvREwDUCPsRXJP2eiXp4=
@@ -3577,7 +3537,7 @@ braces@^3.0.2, braces@^3.0.3, braces@~3.0.2:
   dependencies:
     fill-range "^7.1.1"
 
-browserslist@^4.21.10, browserslist@^4.21.5, browserslist@^4.22.2, browserslist@^4.23.0, "browserslist@>= 4.21.0":
+browserslist@^4.21.10, browserslist@^4.21.5, browserslist@^4.22.2, browserslist@^4.23.0:
   version "4.23.1"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/browserslist/-/browserslist-4.23.1.tgz"
   integrity sha512-TUfofFo/KsK/bWZ9TWQ5O26tsWW4Uhmt8IYklbnUa70udB6P2wA7w7o4PY4muaEPBQaAX+CEnmmIA41NVHtPVw== sha1-zkrwU0s9N9tcGkypi5CA+YUEHpY=
@@ -3656,6 +3616,14 @@ caniuse-lite@^1.0.30001599, caniuse-lite@^1.0.30001629:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/caniuse-lite/-/caniuse-lite-1.0.30001638.tgz"
   integrity sha512-5SuJUJ7cZnhPpeLHaH0c/HPAnAHZvS6ElWyHK9GSIbVOQABLzowiI2pjmpvZ1WEbkyz46iFd4UXlOHR5SqgfMQ== sha1-WY4fDCrDbzfrw/W4iHoyylWOXVY=
 
+cfb@~1.2.1:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/cfb/-/cfb-1.2.2.tgz"
+  integrity sha512-KfdUZsSOw19/ObEWasvBP/Ac4reZvAGauZhs6S/gqNhXhI7cKwvlH7ulj+dOEYnca4bm4SGo8C1bTAQvnTjgQA==
+  dependencies:
+    adler-32 "~1.3.0"
+    crc-32 "~1.2.0"
+
 chalk@^2.4.2:
   version "2.4.2"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/chalk/-/chalk-2.4.2.tgz"
@@ -3699,7 +3667,7 @@ chardet@^0.7.0:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/chardet/-/chardet-0.7.0.tgz"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA== sha1-kAlISfCTfy7twkJdDSip5fDLrZ4=
 
-chokidar@^3.0.0, chokidar@^3.5.1, chokidar@^3.5.2, chokidar@^3.6.0, "chokidar@>=3.0.0 <4.0.0":
+chokidar@^3.0.0, chokidar@^3.5.1, chokidar@^3.6.0, "chokidar@>=3.0.0 <4.0.0":
   version "3.6.0"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/chokidar/-/chokidar-3.6.0.tgz"
   integrity sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw== sha1-GXxsxmnvKo3F57TZfuTgksPrDVs=
@@ -3782,6 +3750,11 @@ clone@^1.0.2:
   version "1.0.4"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/clone/-/clone-1.0.4.tgz"
   integrity sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg== sha1-2jCcwmPfFZlMaIypAheco8fNfH4=
+
+codepage@~1.15.0:
+  version "1.15.0"
+  resolved "https://registry.npmjs.org/codepage/-/codepage-1.15.0.tgz"
+  integrity sha512-3g6NUTPd/YtuuGrhMnOMRjFc+LJw/bnMp3+0r/Wcz3IXUuCosKRJvMphm5+Q+bvTVGcJJuRvVLuYba+WojaFaA==
 
 color-convert@^1.9.0, color-convert@^1.9.3:
   version "1.9.3"
@@ -3978,6 +3951,11 @@ cosmiconfig@^9.0.0:
     import-fresh "^3.3.0"
     js-yaml "^4.1.0"
     parse-json "^5.2.0"
+
+crc-32@~1.2.0, crc-32@~1.2.1:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/crc-32/-/crc-32-1.2.2.tgz"
+  integrity sha512-ROmzCKrTnOwybPcJApAA6WBWij23HVfGVNKqqrZpuyZOHqK2CwHSvpGuyt/UNNvaIjEd8X5IFGp4Mh+Ie1IHJQ==
 
 critters@0.0.22:
   version "0.0.22"
@@ -4274,7 +4252,7 @@ encodeurl@~1.0.2:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/encodeurl/-/encodeurl-1.0.2.tgz"
   integrity sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w== sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
 
-encoding@^0.1.0, encoding@^0.1.13:
+encoding@^0.1.13:
   version "0.1.13"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/encoding/-/encoding-0.1.13.tgz"
   integrity sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A== sha1-VldK/deR9UqOmyeFwFgqLSYhD6k=
@@ -4486,12 +4464,7 @@ eslint-visitor-keys@^4.0.0:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/eslint-visitor-keys/-/eslint-visitor-keys-4.0.0.tgz"
   integrity sha512-OtIRv/2GyiF6o/d8K7MYKKbXrOUBIK6SfkIRM4Z0dY3w+LiQ0vy3F57m0Z71bjbyeiWFiHJ8brqnmE6H6/jEuw== sha1-463AIaoDiiqOCy+LDOj2a5SDsfs=
 
-eslint-visitor-keys@^4.2.0:
-  version "4.2.0"
-  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/eslint-visitor-keys/-/eslint-visitor-keys-4.2.0.tgz"
-  integrity sha1-aHussq+IT83aim59ZcYG9GoUzUU=
-
-"eslint@^6.0.0 || ^7.0.0 || >=8.0.0", eslint@^8.56.0, "eslint@^8.57.0 || ^9.0.0", eslint@^9.5.0:
+eslint@^9.5.0:
   version "9.5.0"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/eslint/-/eslint-9.5.0.tgz"
   integrity sha512-+NAOZFrW/jFTS3dASCGBxX1pkFD0/fsO+hfAkJ4TyYKwgsXZbqzrw+seCYFCcPCYXvnD67tAnglU7GQTz6kcVw== sha1-EYVgNLlKnhoCz8x+lqnwlWljzS8=
@@ -4665,7 +4638,7 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q== sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=
 
-fast-glob@^3.2.11, fast-glob@^3.2.9, fast-glob@^3.3.0, fast-glob@^3.3.2, fast-glob@3.3.2:
+fast-glob@^3.2.11, fast-glob@^3.2.9, fast-glob@^3.3.0, fast-glob@3.3.2:
   version "3.3.2"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/fast-glob/-/fast-glob-3.3.2.tgz"
   integrity sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow== sha1-qQRQHlfP3S/83tRemaVP71XkYSk=
@@ -4788,7 +4761,7 @@ find-up@^6.3.0:
     locate-path "^7.1.0"
     path-exists "^5.0.0"
 
-firebase@^10.12.0, "firebase@^9.0.0 || ^10.0.0":
+firebase@^10.12.0:
   version "10.14.1"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/firebase/-/firebase-10.14.1.tgz"
   integrity sha1-+4ZwmlYnFYkgHrTstqKwnfekYX4=
@@ -4905,6 +4878,11 @@ forwarded@0.2.0:
   version "0.2.0"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/forwarded/-/forwarded-0.2.0.tgz"
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow== sha1-ImmTZCiq1MFcfr6XeahL8LKoGBE=
+
+frac@~1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/frac/-/frac-1.1.2.tgz"
+  integrity sha512-w/XBfkibaTl3YDqASwfDUqkna4Z2p9cFSr1aHDt0WoMTECnRfBOv2WArlZILlqgWlmdIlALXGpM2AOhEk5W3IA==
 
 fraction.js@^4.3.7:
   version "4.3.7"
@@ -5424,7 +5402,7 @@ inquirer-autocomplete-prompt@^1.0.1:
     run-async "^2.4.0"
     rxjs "^6.6.2"
 
-"inquirer@^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0", inquirer@^8.1.1:
+inquirer@^8.1.1:
   version "8.2.6"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/inquirer/-/inquirer-8.2.6.tgz"
   integrity sha1-czt0iIGV2NQApnrDMgEbX65epWI=
@@ -5705,15 +5683,15 @@ jake@^10.8.5:
     filelist "^1.0.4"
     minimatch "^3.1.2"
 
-"jasmine-core@^4.0.0 || ^5.0.0", jasmine-core@~5.1.2:
-  version "5.1.2"
-  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/jasmine-core/-/jasmine-core-5.1.2.tgz"
-  integrity sha512-2oIUMGn00FdUiqz6epiiJr7xcFyNYj3rDcfmnzfkBnHyBQ3cBQUs4mmyGsOb7TTLb9kxk7dBcmEmqhDKkBoDyA== sha1-jyeJ+qee8f+terq2v/jUvWYQlPc=
-
 jasmine-core@^4.1.0:
   version "4.6.1"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/jasmine-core/-/jasmine-core-4.6.1.tgz"
   integrity sha512-VYz/BjjmC3klLJlLwA4Kw8ytk0zDSmbbDLNs794VnWmkcCB7I9aAL/D48VNQtmITyPvea2C3jdUMfc3kAoy0PQ== sha1-XruK+gcoIHj417FYcXN6g7dOWPI=
+
+jasmine-core@~5.1.2:
+  version "5.1.2"
+  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/jasmine-core/-/jasmine-core-5.1.2.tgz"
+  integrity sha512-2oIUMGn00FdUiqz6epiiJr7xcFyNYj3rDcfmnzfkBnHyBQ3cBQUs4mmyGsOb7TTLb9kxk7dBcmEmqhDKkBoDyA== sha1-jyeJ+qee8f+terq2v/jUvWYQlPc=
 
 jest-diff@^29.4.1:
   version "29.7.0"
@@ -5892,7 +5870,7 @@ karma-jasmine-html-reporter@~2.1.0:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/karma-jasmine-html-reporter/-/karma-jasmine-html-reporter-2.1.0.tgz"
   integrity sha512-sPQE1+nlsn6Hwb5t+HHwyy0A1FNCVKuL1192b+XNauMYWThz2kweiBVW1DqloRpVvZIJkIoHVB7XRpK78n1xbQ== sha1-+VGtALCNYdA1lUAskU0aWJxJMOM=
 
-karma-jasmine@^5.0.0, karma-jasmine@~5.1.0:
+karma-jasmine@~5.1.0:
   version "5.1.0"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/karma-jasmine/-/karma-jasmine-5.1.0.tgz"
   integrity sha512-i/zQLFrfEpRyQoJF9fsCdTMOF5c2dK7C7OmsuKg2D0YSsuZSfQDiLuaiktbuio6F2wiCsZSnSnieIQ0ant/uzQ== sha1-OvRVimUC+haFag80bsIZPUuISy8=
@@ -5906,7 +5884,7 @@ karma-source-map-support@1.4.0:
   dependencies:
     source-map-support "^0.5.5"
 
-karma@^6.0.0, karma@^6.3.0, karma@~6.4.3:
+karma@~6.4.3:
   version "6.4.3"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/karma/-/karma-6.4.3.tgz"
   integrity sha512-LuucC/RE92tJ8mlCwqEoRWXP38UMAqpnq98vktmS9SznSoUPPUJQbc91dHcxcunROvfQjdORVA/YFviH+Xci9Q== sha1-dj5QD5lZchi7tTbeGhSsxM7qfOg=
@@ -5966,7 +5944,7 @@ less-loader@12.2.0:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/less-loader/-/less-loader-12.2.0.tgz"
   integrity sha512-MYUxjSQSBUQmowc0l5nPieOYwMzGPUaTzB6inNW/bdPEG9zOL3eAAD1Qw5ZxSPk7we5dMojHwNODYMV1hq4EVg== sha1-4elFIvar6eBk7zlsKaMVG8bBtsw=
 
-less@*, "less@^3.5.0 || ^4.0.0", less@^4.2.0, less@4.2.0:
+less@4.2.0:
   version "4.2.0"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/less/-/less-4.2.0.tgz"
   integrity sha512-P3b3HJDBtSzsXUl0im2L7gTO5Ubg8mEN6G8qoTS77iXxXX4Hvu4Qj540PZDvQ8V6DmX6iXo98k7Md0Cm1PrLaA== sha1-y++/qhSkzTiOIJmytR+VbhRlxFA=
@@ -6690,7 +6668,7 @@ nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
-nx@^19.0.6, "nx@>= 17 <= 20", nx@19.3.2:
+nx@^19.0.6, nx@19.3.2:
   version "19.3.2"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/nx/-/nx-19.3.2.tgz"
   integrity sha512-eKWs+ahkTKnq9EeWJCE4u8JLeq1cOHnq5DKoiisy2nwUg4KGy1odReegxUMLeEgNBcMI40EUtEJFiTMJSXZQeg== sha1-RTj0qRnBef6oEbyzPuQJrR5Px4I=
@@ -7130,7 +7108,7 @@ postcss-value-parser@^4.1.0, postcss-value-parser@^4.2.0:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ== sha1-cjwJkgg2um0+WvAZ+SvAlxwC5RQ=
 
-"postcss@^7.0.0 || ^8.0.1", postcss@^8.1.0, postcss@^8.2.14, postcss@^8.4.0, postcss@^8.4.23, postcss@^8.4.33, postcss@^8.4.38, postcss@8.4.38:
+postcss@^8.2.14, postcss@^8.4.23, postcss@^8.4.33, postcss@^8.4.38, postcss@8.4.38:
   version "8.4.38"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/postcss/-/postcss-8.4.38.tgz"
   integrity sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A== sha1-s4fVM7ryBUKI4zcGbYHGvunbng4=
@@ -7492,19 +7470,19 @@ rxfire@^6.0.5:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/rxfire/-/rxfire-6.0.5.tgz"
   integrity sha1-AgNUALFQ3XMDU8eG/6FSg/A4ndQ=
 
-"rxjs@^6.0.0 || ^7.0.0", "rxjs@^6.5.3 || ^7.4.0", "rxjs@^6.5.5 || ^7.4.0", rxjs@^7.5.5, rxjs@^7.8.1, rxjs@>=7.0.0, rxjs@~7.8.0, rxjs@~7.8.1, rxjs@7.8.1:
-  version "7.8.1"
-  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/rxjs/-/rxjs-7.8.1.tgz"
-  integrity sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg== sha1-b289meqARCke/ZLnx/z1YsQFdUM=
-  dependencies:
-    tslib "^2.1.0"
-
 rxjs@^6.6.2:
   version "6.6.7"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/rxjs/-/rxjs-6.6.7.tgz"
   integrity sha1-kKwBisq/SRv2UEQjXVhjxNq4BMk=
   dependencies:
     tslib "^1.9.0"
+
+rxjs@^7.5.5, rxjs@^7.8.1, rxjs@~7.8.1, rxjs@7.8.1:
+  version "7.8.1"
+  resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/rxjs/-/rxjs-7.8.1.tgz"
+  integrity sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg== sha1-b289meqARCke/ZLnx/z1YsQFdUM=
+  dependencies:
+    tslib "^2.1.0"
 
 safe-buffer@^5.1.0, safe-buffer@>=5.1.0, safe-buffer@~5.2.0, safe-buffer@5.2.1:
   version "5.2.1"
@@ -7538,7 +7516,7 @@ sass-loader@14.2.1:
   dependencies:
     neo-async "^2.6.2"
 
-sass@*, sass@^1.3.0, sass@1.77.2:
+sass@1.77.2:
   version "1.77.2"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/sass/-/sass-1.77.2.tgz"
   integrity sha512-eb4GZt1C3avsX3heBNlrc7I09nyT00IUuo4eFhAbeXWU2fvA7oXI53SxODVAA+zgZCk9aunAZgO+losjR3fAwA== sha1-GNTtLu/CYM3ICZxUOewTA/1YY6o=
@@ -7922,6 +7900,13 @@ sprintf-js@~1.0.2:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/sprintf-js/-/sprintf-js-1.0.3.tgz"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g== sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
+ssf@~0.11.2:
+  version "0.11.2"
+  resolved "https://registry.npmjs.org/ssf/-/ssf-0.11.2.tgz"
+  integrity sha512-+idbmIXoYET47hH+d7dfm2epdOMUDjqcB4648sTZ+t2JwoyBFL/insLfB/racrDmsKB3diwsDA696pZMieAC5g==
+  dependencies:
+    frac "~1.1.2"
+
 ssri@^10.0.0:
   version "10.0.6"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/ssri/-/ssri-10.0.6.tgz"
@@ -8164,7 +8149,7 @@ terser-webpack-plugin@^5.3.10:
     serialize-javascript "^6.0.1"
     terser "^5.26.0"
 
-terser@^5.26.0, terser@^5.4.0, terser@5.31.0:
+terser@^5.26.0, terser@5.31.0:
   version "5.31.0"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/terser/-/terser-5.31.0.tgz"
   integrity sha512-Q1JFAoUKE5IMfI4Z/lkE/E6+SwgzO+x4tq4v1AyBLRj8VSYvRO6A/rQrPg1yud4g0En9EKI1TvFRF2tQFcoUkg== sha1-Bu74bxcAfbrUWT8RpXTH9esCxqE=
@@ -8267,7 +8252,7 @@ tslib@^1.9.0:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/tslib/-/tslib-1.14.1.tgz"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
 
-tslib@^2, tslib@^2.0.0, tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.0, tslib@^2.6.3, tslib@2:
+tslib@^2.0.0, tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.0, tslib@^2.6.3:
   version "2.6.3"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/tslib/-/tslib-2.6.3.tgz"
   integrity sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ== sha1-BDj4EK16ntzeeiQcPYDbaTyMv+A=
@@ -8311,7 +8296,7 @@ typed-assert@^1.0.8:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/typed-assert/-/typed-assert-1.0.9.tgz"
   integrity sha512-KNNZtayBCtmnNmbo5mG47p1XsCyrx6iVqomjcZnec/1Y5GGARaxPs6r49RnSPeUP3YjNYiU9sQHAtY4BBvnZwg== sha1-ivnU+TQyxJcOxxfjAG8z8TWwYhM=
 
-typescript@*, typescript@>=4.2.0, typescript@>=4.9.5, "typescript@>=5.4 <5.5", typescript@5.4:
+typescript@5.4:
   version "5.4.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/typescript/-/typescript-5.4.5.tgz"
   integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ== sha1-QszvLFcf29D2cYsdH15uXvAG9hE=
@@ -8436,7 +8421,7 @@ vary@^1, vary@~1.1.2:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/vary/-/vary-1.1.2.tgz"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg== sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-"vite@^3.0.0 || ^4.0.0 || ^5.0.0", vite@5.2.11:
+vite@5.2.11:
   version "5.2.11"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/vite/-/vite-5.2.11.tgz"
   integrity sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ== sha1-cm7AVVVDFzWFNBfDwL+zYAPKDL0=
@@ -8496,7 +8481,7 @@ webpack-dev-middleware@^7.1.0, webpack-dev-middleware@7.2.1:
     range-parser "^1.2.1"
     schema-utils "^4.0.0"
 
-webpack-dev-server@^5.0.2, webpack-dev-server@5.0.4:
+webpack-dev-server@5.0.4:
   version "5.0.4"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/webpack-dev-server/-/webpack-dev-server-5.0.4.tgz"
   integrity sha512-dljXhUgx3HqKP2d8J/fUMvhxGhzjeNVarDLcbO/EWMSgRizDkxHQDZQaLFL5VJY9tRBj2Gz+rvCEYYvhbqPHNA== sha1-y26kf/eWuSUexJqU8kpCXhLjybg=
@@ -8553,7 +8538,7 @@ webpack-subresource-integrity@5.1.0:
   dependencies:
     typed-assert "^1.0.8"
 
-webpack@^5.0.0, webpack@^5.1.0, webpack@^5.12.0, webpack@^5.27.0, webpack@^5.30.0, webpack@^5.54.0, webpack@^5.72.1, webpack@>=5, webpack@5.91.0:
+webpack@5.91.0:
   version "5.91.0"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/webpack/-/webpack-5.91.0.tgz"
   integrity sha512-rzVwlLeBWHJbmgTC/8TvAcu5vpJNII+MelQpylD4jNERPwpBJOE2lEcko1zJX3QJeLjTTAnQxn/OJ8bjDzVQaw== sha1-/6ksHGGNGMh48GiSu9wzc8caAdk=
@@ -8657,10 +8642,20 @@ winston@^3.0.0:
     triple-beam "^1.3.0"
     winston-transport "^4.9.0"
 
+wmf@~1.0.1:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/wmf/-/wmf-1.0.2.tgz"
+  integrity sha512-/p9K7bEh0Dj6WbXg4JG0xvLQmIadrner1bi45VMJTfnbVHsc7yIajZyoSoK60/dtVBs12Fm6WkUI5/3WAVsNMw==
+
 word-wrap@^1.2.5:
   version "1.2.5"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/word-wrap/-/word-wrap-1.2.5.tgz"
   integrity sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA== sha1-0sRcbdT7zmIaZvE2y+Mor9BBCzQ=
+
+word@~0.3.0:
+  version "0.3.0"
+  resolved "https://registry.npmjs.org/word/-/word-0.3.0.tgz"
+  integrity sha512-OELeY0Q61OXpdUfTp+oweA/vtLVg5VDOXh+3he3PNzLGG/y0oylSOC1xRVj0+l4vQ3tj/bB1HVHv1ocXkQceFA==
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
   version "7.0.0"
@@ -8707,6 +8702,19 @@ ws@^8.16.0, ws@~8.17.1:
   version "8.17.1"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/ws/-/ws-8.17.1.tgz"
   integrity sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ== sha1-kpPaUwu1SP68lTcdkPnIeHJ9kZs=
+
+xlsx@^0.18.5:
+  version "0.18.5"
+  resolved "https://registry.npmjs.org/xlsx/-/xlsx-0.18.5.tgz"
+  integrity sha512-dmg3LCjBPHZnQp5/F/+nnTa+miPJxUXB6vtk42YjBBKayDNagxGEeIdWApkYPOf3Z3pm3k62Knjzp7lMeTEtFQ==
+  dependencies:
+    adler-32 "~1.3.0"
+    cfb "~1.2.1"
+    codepage "~1.15.0"
+    crc-32 "~1.2.1"
+    ssf "~0.11.2"
+    wmf "~1.0.1"
+    word "~0.3.0"
 
 y18n@^5.0.5:
   version "5.0.8"
@@ -8769,7 +8777,7 @@ yocto-queue@^1.0.0:
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/yocto-queue/-/yocto-queue-1.0.0.tgz"
   integrity sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g== sha1-f4FkM/ssvFEeyL99Jjw7WKGjwlE=
 
-zone.js@~0.14.0, zone.js@~0.14.7:
+zone.js@~0.14.7:
   version "0.14.7"
   resolved "https://pkgs.dev.azure.com/SIP360/_packaging/NPM-Package/npm/registry/zone.js/-/zone.js-0.14.7.tgz"
   integrity sha512-0w6DGkX2BPuiK/NLf+4A8FLE43QwBfuqz2dVgi/40Rj1WmqUskCqj329O/pwrqFJLG5X8wkeG2RhIAro441xtg== sha1-SppwWZEJZjsZIRZWY7usUhmV7vM=
