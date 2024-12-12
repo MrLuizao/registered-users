@@ -4,6 +4,8 @@ import { animate, style, transition, trigger } from '@angular/animations';
 
 // bootstrap
 import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
+import { AuthService } from 'src/app/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-right',
@@ -28,7 +30,7 @@ export class NavRightComponent {
   friendId!: number;
 
   // constructor
-  constructor() {
+  constructor( public authService: AuthService, private router: Router ) {
     this.visibleUserList = false;
     this.chatMessage = false;
   }
@@ -37,5 +39,14 @@ export class NavRightComponent {
   onChatToggle(friendID: number) {
     this.friendId = friendID;
     this.chatMessage = !this.chatMessage;
+  }
+
+  closeSession(){
+    this.authService.logout().then(() =>{
+      this.router.navigate(['/auth/signin']);
+    })
+    .catch(
+      err => localStorage.removeItem('isLoggedIn')
+    );
   }
 }

@@ -29,6 +29,8 @@ import { environment } from 'src/environments/environment';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
+import { provideAuth, getAuth } from '@angular/fire/auth';  // Importar el servicio Auth
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,9 +58,12 @@ import { provideFirestore, getFirestore } from '@angular/fire/firestore';
     ReactiveFormsModule, 
     BrowserAnimationsModule,
   ],
+
   providers: [
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
+
+    provideAuth(() => getAuth()),
   ],
   bootstrap: [AppComponent]
 })

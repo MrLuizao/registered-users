@@ -24,6 +24,7 @@ import {
 } from 'ng-apexcharts';
 import { FirebaseService } from 'src/app/services/firebase.service';
 import { CommonService } from 'src/app/services/common.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 export type ChartOptions = {
   series: ApexAxisChartSeries | ApexNonAxisChartSeries;
@@ -61,7 +62,7 @@ export default class DashAnalyticsComponent {
   chartOptions_3!: Partial<ChartOptions>;
 
   // constructor
-  constructor(private firebaseService: FirebaseService, private commonService: CommonService) {
+  constructor(private firebaseService: FirebaseService, private commonService: CommonService, private authService: AuthService) {
 
     this.firebaseService.getRegisteredUsers().subscribe({
       next: (next)=> {
