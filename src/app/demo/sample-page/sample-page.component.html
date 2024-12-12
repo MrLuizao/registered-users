@@ -1,12 +1,93 @@
+
 <div class="row">
+
   <div class="col-sm-12">
-    <app-card cardTitle="Hello Card" [options]="false">
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-        in culpa qui officia deserunt mollit anim id est laborum."
-      </p>
+    <app-card cardTitle="" [options]="false" id="printSection">
+
+      <div class="row">
+
+        <div class="col-12 img-contain">
+          <img src="assets/images/expo/logo-expo.png" alt="Expo Logo"/>
+        </div>
+
+        <div class="col-md-6">          
+          <div class="form-group">
+            <label for="empresa">Empresa:</label>
+            <input
+              id="empresa"
+              class="form-control"
+              [(ngModel)]="userData.empresa"
+              name="empresa"
+              [disabled]="isDisabled"
+              placeholder="Empresa"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input
+              id="email"
+              type="email"
+              class="form-control"
+              [(ngModel)]="userData.email"
+              name="email"
+              [disabled]="isDisabled"
+              placeholder="Correo electrónico"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="contacto">Contacto:</label>
+            <input
+              id="contacto"
+              class="form-control"
+              [(ngModel)]="userData.contacto"
+              name="contacto"
+              [disabled]="isDisabled"
+              placeholder="Contacto"
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input
+              id="telefono"
+              class="form-control"
+              [(ngModel)]="userData.telefono"
+              name="telefono"
+              [disabled]="isDisabled"
+              placeholder="Teléfono"
+            />
+          </div>
+        </div>
+
+      </div>
+
     </app-card>
+
+    <section>
+      <button type="button" class="btn btn-outline-success" (click)="toggleEdit()">
+        {{ isDisabled ? 'EDITAR CAMPOS' : 'GUARDAR CAMPOS EDITADOS' }}
+      </button>
+      <button type="button" class="btn btn-success" (click)="printData()" [disabled]="!isDisabled">
+        <span>
+          IMPRIMIR 
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-down-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"
+          />
+        </svg>
+        </span>
+      </button>    
+    </section>
+
   </div>
 </div>

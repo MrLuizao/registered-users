@@ -1,0 +1,19 @@
+button{
+    width: 100%;
+}
+
+section{
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.img-contain{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+    
+    img{
+        max-width: 50% !important;
+    }
+}

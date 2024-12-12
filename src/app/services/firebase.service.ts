@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Firestore, collection, collectionData } from '@angular/fire/firestore';
+import { Firestore, collection, collectionData, doc, docData} from '@angular/fire/firestore';
+
 
 import { Observable } from 'rxjs';
 
@@ -14,5 +15,11 @@ export class FirebaseService {
     const usersCollection = collection(this.firestore, 'registered-users');
     return collectionData(usersCollection, { idField: 'id' });
   }  
+
+  // Método para obtener un usuario específico por su ID
+  getUserById(id: string): Observable<any> {
+    const userDocRef = doc(this.firestore, `registered-users/${id}`);
+    return docData(userDocRef, { idField: 'id' }); // Incluye el ID en los datos retornados
+  }
 
 }
