@@ -13,7 +13,7 @@
         <div class="col-md-6">          
           <div class="form-group">
             <label for="empresa">Empresa:</label>
-            <input
+            <input *ngIf="userData"
               id="empresa"
               class="form-control"
               [(ngModel)]="userData.empresa"
@@ -24,7 +24,7 @@
           </div>
           <div class="form-group">
             <label for="email">Correo electrónico:</label>
-            <input
+            <input *ngIf="userData"
               id="email"
               type="email"
               class="form-control"
@@ -39,7 +39,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <label for="contacto">Contacto:</label>
-            <input
+            <input *ngIf="userData"
               id="contacto"
               class="form-control"
               [(ngModel)]="userData.contacto"
@@ -50,7 +50,7 @@
           </div>
           <div class="form-group">
             <label for="telefono">Teléfono:</label>
-            <input
+            <input *ngIf="userData"
               id="telefono"
               class="form-control"
               [(ngModel)]="userData.telefono"
